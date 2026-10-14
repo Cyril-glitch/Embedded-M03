@@ -6,7 +6,7 @@
 /*   By: cycolonn <cycolonn@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 10:52:29 by cycolonn          #+#    #+#             */
-/*   Updated: 2026/10/12 19:31:53 by cycolonn         ###   ########.fr       */
+/*   Updated: 2026/10/14 18:44:08 by cycolonn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,20 +20,16 @@ int main()
 
     while (1)
     {
-        /* ignite red*/
-        SET(PORTD, PD5);
+        /*RED*/
+        PORTD = (1U << PD5);
         _delay_ms(1000);
-        CLEAR(PORTD, PD5);
 
-        /*ignite green*/
-        SET(PORTD, PD6);
+        /*GREEN*/
+        PORTD = (1U << PD6);
         _delay_ms(1000);
-        CLEAR(PORTD, PD6);
-        
-        /*ignite blue*/
-        SET(PORTD, PD3);
+
+        /*BLUE*/
+        PORTD = (1U << PD3);
         _delay_ms(1000);
-        CLEAR(PORTD, PD3);
     }
-
 }
