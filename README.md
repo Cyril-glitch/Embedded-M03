@@ -1,7 +1,7 @@
 # Embedded-M03 ⚡
 
 <p align="center">
-  <img src="../Embedded-M00/assets/atmega328p.png" alt="ATmega328P board illustration" width="330" height="170" style="border-radius: 12px;" />
+  <img src="assets/atmega328p.png" alt="ATmega328P board illustration" width="330" height="170" style="border-radius: 12px;" />
 </p>
 
 This module focuses on visual output and multi-color control on AVR targets. It introduces how to drive multiple GPIO lines to produce different LED states, including simple color sequences and periodic patterns.
